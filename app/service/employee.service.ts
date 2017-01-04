@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class EmployeeService {
-    private apiUrl="http://586c926d6d271c1200d51f8f.mockapi.io/api/employees1";
+    private apiUrl="http://586c926d6d271c1200d51f8f.mockapi.io/api/employees";
 
     constructor(private _http:Http){}
     GetList():Observable<any[]> {
