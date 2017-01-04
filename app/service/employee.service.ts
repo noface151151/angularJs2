@@ -11,4 +11,7 @@ export class EmployeeService {
     GetList():Observable<any[]> {
       return this._http.get(this.apiUrl).map((resp:Response)=>resp.json())
     }
+    GetDetail(id:number):Observable<any[]> {
+      return this._http.get(this.apiUrl+"/"+id).map((resp:Response)=>resp.json())
+    }
 }

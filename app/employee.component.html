@@ -11,6 +11,7 @@
             <td>{{employee.name}} </td>
             <td>{{employee.age}} </td>
             <td>{{employee.createdAt | date}} </td>
+            <td><a [routerLink]="['/employee-detail',employee.id]">Detail</a></td>
         </tr>
     </tbody>
 </table>
