@@ -1,5 +1,16 @@
-<ul>
-    <li *ngFor="let employee of employeelist">
-        {{employee.Name}}
-    </li>
-</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>CreatedAt</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeelist">
+            <td>{{employee.name}} </td>
+            <td>{{employee.age}} </td>
+            <td>{{employee.createdAt | date}} </td>
+        </tr>
+    </tbody>
+</table>
