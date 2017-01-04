@@ -3,8 +3,7 @@ import { EmployeeService } from './service/employee.service';
 
 @Component({
   selector: 'employee-list',
-  templateUrl: 'app/employee.component.html',
-  providers: [EmployeeService]
+  templateUrl: 'app/employee.component.html'
 })
 export class EmployeeListComponent implements OnInit{
   public employeelist:any[];
