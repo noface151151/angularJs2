@@ -3,4 +3,11 @@
     <label>Age</label> : <label>{{employee.age}}</label><br>
     <label>CreatedAt</label> : <label>{{employee.createdAt|date}}</label>
 </div>
-<a class="btn btn-primary" [routerLink]="['/employees']">Go back</a>
+
+<a class="btn btn-default" [routerLink]="['project']">Project</a>
+
+<a class="btn btn-default" [routerLink]="['/employees']">Go back</a>
+
+<router-outlet>
+
+</router-outlet>
