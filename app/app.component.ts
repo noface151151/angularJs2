@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl:'app/app.component.html',
+  styleUrls:['app/app.component.css']
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { 
+  public cities=[{Id:1,Name:"Ha Noi"},{Id:2,Name:"Ho Chi Minh"}];
+  onSubmit(object:any){
+    console.log(object);
+  }
+ }
