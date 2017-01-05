@@ -11,6 +11,8 @@ import { LoginComponent } from './login.component';
 import { EmployeeService } from './service/employee.service';
 import { HttpModule } from '@angular/http';
 import { appRoutes } from './app.routes';
+import { LoginService } from './service/login.service';
+import {CheckLoginGuard} from './guards/check-login.guard';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, appRoutes],
@@ -24,7 +26,7 @@ import { appRoutes } from './app.routes';
     EmployeeProjectComponent,
     LoginComponent
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService,LoginService,CheckLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

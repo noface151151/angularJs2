@@ -1,7 +1,8 @@
 <section>header</section>
 <ul>
     <li><a routerLink='' routerLinkActive="active">Home</a></li>
-     <li><a routerLink='login' routerLinkActive="active">Login</a></li>
+     <li *ngIf="!islogged"  ><a routerLink='login' routerLinkActive="active">Login</a></li>
+      <li *ngIf="islogged"  ><a (click)="Logout()" style="cursor:pointer">Logout</a></li>
     <li><a routerLink='employees' routerLinkActive="active">Employees</a></li>
 </ul>
 <router-outlet>
